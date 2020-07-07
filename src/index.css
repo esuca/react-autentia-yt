@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.button {
+   padding: 10px;
+   font-size: 16px;
+   background-color: black;
+   border: 1px solid black;
+   color: white;
+   border-radius: 4px;
+}
+
+.button:disabled {
+    background-color: #a2a1a1;
+    border: 1px solid #a2a1a1;
+}
+
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+p {
+    padding: 0;
+}
+
+button {
+    background-color: transparent;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+nav {
+    height: 50px;
+    background-color: whitesmoke;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    line-height: 50px;
+}
+
+main {
+    margin: 8px;
+}

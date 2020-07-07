@@ -9,5 +9,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/jest" level="application" />
+    <orderEntry type="library" name="@types/testing-library__jest-dom" level="application" />
+    <orderEntry type="library" name="@types/react-dom" level="application" />
+    <orderEntry type="library" name="@types/jest" level="application" />
+    <orderEntry type="library" name="@types/testing-library__jest-dom" level="application" />
+    <orderEntry type="library" name="@types/testing-library__react-hooks" level="application" />
   </component>
 </module>
