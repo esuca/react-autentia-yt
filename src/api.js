@@ -5,23 +5,27 @@ const products = [
   { id: 4, title: '🩳 Pantalones cortos', price: 10 },
 ]
 
-function orderByASC(a, b) {
+function orderASC(a, b) {
   return a.price - b.price
 }
 
-function orderByDESC(a, b) {
+function orderDESC(a, b) {
   return b.price - a.price
 }
 
-export function fetchProducts(order = 'ASC') {
-  const shouldThrow = Math.random() * 11 < 3
+export function fetchProducts(order) {
+  console.count('Fetch Products Request')
+
+  // const shouldThrow = Math.random() * 11 < 2
+  const shouldThrow = false
+
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (shouldThrow) {
-        reject(new Error('ERROR !!'))
+        reject(new Error('error fetching the products !!'))
       } else {
-        const orderByFn = order === 'ASC' ? orderByASC : orderByDESC
-        resolve(products.sort(orderByFn))
+        const orderFn = order === 'ASC' ? orderASC : orderDESC
+        resolve(products.sort(orderFn))
       }
     }, 300)
   })

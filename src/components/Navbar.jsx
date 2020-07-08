@@ -1,10 +1,18 @@
 import React from 'react'
-import { Cart } from './Cart'
 
 export function Navbar(props) {
   return (
     <nav>
-      <Cart />
+      <Cart cartItems={props.cartItems} />
     </nav>
+  )
+}
+
+function Cart(props) {
+  return (
+    <div>
+      🛒 Cart:
+      <b>{props.cartItems.length}</b>
+    </div>
   )
 }
