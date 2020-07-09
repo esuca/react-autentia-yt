@@ -7,11 +7,11 @@ import { CartContext } from '../../App'
 
 jest.mock('../../api')
 
+// loading_products = "Cargando products"
+
 describe('Product Section', () => {
   async function waitSpinnerToHide(component) {
-    await waitForElementToBeRemoved(() =>
-      component.queryByText('Cargando productos...')
-    )
+    await waitForElementToBeRemoved(() => component.queryByText('loading_products'))
   }
 
   test('show spinner and displays the products', async () => {

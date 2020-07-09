@@ -16,8 +16,8 @@ function orderDESC(a, b) {
 export function fetchProducts(order) {
   console.count('Fetch Products Request')
 
-  // const shouldThrow = Math.random() * 11 < 2
-  const shouldThrow = false
+  const shouldThrow = Math.random() * 11 < 2
+  // const shouldThrow = false
 
   return new Promise((resolve, reject) => {
     setTimeout(() => {

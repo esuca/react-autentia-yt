@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../App'
 
 export function Navbar(props) {
   return (
     <nav>
-      <Cart cartItems={props.cartItems} />
+      <Cart />
     </nav>
   )
 }
 
 function Cart(props) {
+  const cart = useContext(CartContext)
+
   return (
     <div>
       🛒 Cart:
-      <b>{props.cartItems.length}</b>
+      <b>{cart.cartItems.length}</b>
     </div>
   )
 }
